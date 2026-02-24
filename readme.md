@@ -61,6 +61,9 @@ bash train_smolvlm_large.sh
 ```bash
 cd evaluation/libero
 ```
+
+### 6. Results
+
 <img width="506" height="1220" alt="image" src="https://github.com/user-attachments/assets/6ee1cd5e-42c5-4cf7-9cce-6dc04c1a215f" />
 
 ## Model Architecture
