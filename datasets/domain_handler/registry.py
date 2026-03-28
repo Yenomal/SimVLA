@@ -2,6 +2,7 @@ from __future__ import annotations
 from typing import Dict, Type
 from .base import DomainHandler
 from .libero_hdf5 import LiberoHDF5Handler
+from .rmbench_hdf5 import RMBenchHDF5Handler
 
 # Registry for dataset handlers
 _REGISTRY: Dict[str, Type[DomainHandler]] = {
@@ -12,6 +13,8 @@ _REGISTRY: Dict[str, Type[DomainHandler]] = {
     "libero_goal": LiberoHDF5Handler,
     "libero_object": LiberoHDF5Handler,
     "libero_spatial": LiberoHDF5Handler,
+    # RMBench
+    "rmbench_hdf5": RMBenchHDF5Handler,
 }
 
 

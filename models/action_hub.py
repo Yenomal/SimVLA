@@ -272,6 +272,125 @@ class LiberoJointActionSpace(BaseActionSpace):
 
 
 # =============================================================================
+# RMBench Action Space
+# =============================================================================
+@register_action("rmbench_joint")
+class RMBenchJointActionSpace(BaseActionSpace):
+    """
+    RMBench joint-space action space for the default aloha-agilex embodiment.
+
+    Data layout:
+      - state/proprio: 14-dim
+        [left_joint_0..5, left_gripper, right_joint_0..5, right_gripper]
+      - actions: 14-dim future joint targets in the same layout
+
+    This baseline predicts absolute future joint targets instead of delta EE actions.
+    """
+
+    dim_action = 14
+    dim_proprio = 14
+    gripper_idx = (6, 13)
+
+    def __init__(
+        self,
+        norm_stats_path: Optional[str] = None,
+        use_quantile_norm: bool = False,
+    ):
+        super().__init__()
+        self.use_quantile_norm = use_quantile_norm
+        self.state_norm_stats: Optional[NormStats] = None
+        self.action_norm_stats: Optional[NormStats] = None
+
+        if norm_stats_path:
+            self.load_norm_stats(norm_stats_path)
+
+    def load_norm_stats(self, path: str):
+        """Load normalization statistics."""
+        stats_dict = load_norm_stats(path)
+
+        if "state" in stats_dict:
+            self.state_norm_stats = stats_dict["state"]
+            print(f"[RMBenchJointActionSpace] Loaded state norm stats, dim={len(self.state_norm_stats.mean)}")
+
+        if "actions" in stats_dict:
+            self.action_norm_stats = stats_dict["actions"]
+            print(f"[RMBenchJointActionSpace] Loaded actions norm stats, dim={len(self.action_norm_stats.mean)}")
+
+    def to(self, device):
+        """Move normalization statistics to device."""
+        if self.state_norm_stats is not None:
+            self.state_norm_stats.to(device)
+        if self.action_norm_stats is not None:
+            self.action_norm_stats.to(device)
+        return super().to(device)
+
+    def _normalize_with_stats(self, x: torch.Tensor, stats: NormStats) -> torch.Tensor:
+        """Normalize using specified statistics."""
+        if stats.mean.device != x.device:
+            stats.to(x.device)
+
+        D = x.shape[-1]
+
+        if self.use_quantile_norm and stats.q01 is not None and stats.q99 is not None:
+            q01 = stats.q01[..., :D]
+            q99 = stats.q99[..., :D]
+            return (x - q01) / (q99 - q01 + 1e-6) * 2.0 - 1.0
+
+        mean = stats.mean[..., :D]
+        std = stats.std[..., :D]
+        return (x - mean) / (std + 1e-6)
+
+    def _unnormalize_with_stats(self, x: torch.Tensor, stats: NormStats) -> torch.Tensor:
+        """Unnormalize using specified statistics."""
+        if stats.mean.device != x.device:
+            stats.to(x.device)
+
+        D = x.shape[-1]
+
+        if self.use_quantile_norm and stats.q01 is not None and stats.q99 is not None:
+            q01 = stats.q01[..., :D]
+            q99 = stats.q99[..., :D]
+            return (x + 1.0) / 2.0 * (q99 - q01 + 1e-6) + q01
+
+        mean = stats.mean[..., :D]
+        std = stats.std[..., :D]
+        return x * (std + 1e-6) + mean
+
+    def normalize_state(self, x: torch.Tensor) -> torch.Tensor:
+        """Normalize state/proprio."""
+        if self.state_norm_stats is not None:
+            return self._normalize_with_stats(x, self.state_norm_stats)
+        return x
+
+    def normalize_action(self, x: torch.Tensor) -> torch.Tensor:
+        """Normalize action."""
+        if self.action_norm_stats is not None:
+            return self._normalize_with_stats(x, self.action_norm_stats)
+        return x
+
+    def unnormalize_action(self, x: torch.Tensor) -> torch.Tensor:
+        """Unnormalize action."""
+        if self.action_norm_stats is not None:
+            return self._unnormalize_with_stats(x, self.action_norm_stats)
+        return x
+
+    def compute_loss(self, pred, target):
+        """Full-dimension MSE loss."""
+        loss = torch.square(pred - target)
+        return {"velocity_loss": torch.mean(loss)}
+
+    def preprocess(self, proprio, action, mode="train"):
+        """Normalize proprio and action separately."""
+        proprio_norm = self.normalize_state(proprio)
+        action_norm = self.normalize_action(action)
+        return proprio_norm, action_norm
+
+    def postprocess(self, action: torch.Tensor) -> torch.Tensor:
+        """Unnormalize action."""
+        return self.unnormalize_action(action)
+
+
+# =============================================================================
 # Exports
 # =============================================================================
 __all__ = [
@@ -279,6 +398,7 @@ __all__ = [
     "build_action_space",
     "register_action",
     "LiberoJointActionSpace",
+    "RMBenchJointActionSpace",
     "ACTION_REGISTRY",
     "NormStats",
     "load_norm_stats",
