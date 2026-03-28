@@ -1,0 +1,4105 @@
+{
+  "dataset_name": "rmbench_hdf5",
+  "data_dir": "../RMBench/data/data",
+  "task_config": "demo_clean",
+  "split": "train",
+  "train_episodes_per_task": 48,
+  "eval_episodes_per_task": 2,
+  "tasks": [
+    "battery_try",
+    "blocks_ranking_try",
+    "classify_blocks",
+    "cover_blocks",
+    "observe_and_pickup",
+    "place_block_mat",
+    "press_button",
+    "put_back_block",
+    "rearrange_blocks",
+    "storage_blocks",
+    "swap_T",
+    "swap_blocks"
+  ],
+  "task_stats": {
+    "battery_try": {
+      "num_episodes": 48
+    },
+    "blocks_ranking_try": {
+      "num_episodes": 48
+    },
+    "classify_blocks": {
+      "num_episodes": 48
+    },
+    "cover_blocks": {
+      "num_episodes": 48
+    },
+    "observe_and_pickup": {
+      "num_episodes": 48
+    },
+    "place_block_mat": {
+      "num_episodes": 48
+    },
+    "press_button": {
+      "num_episodes": 48
+    },
+    "put_back_block": {
+      "num_episodes": 48
+    },
+    "rearrange_blocks": {
+      "num_episodes": 48
+    },
+    "storage_blocks": {
+      "num_episodes": 48
+    },
+    "swap_T": {
+      "num_episodes": 48
+    },
+    "swap_blocks": {
+      "num_episodes": 48
+    }
+  },
+  "num_episodes": 576,
+  "datalist": [
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode0.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 0,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode0.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode1.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 1,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode1.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode10.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 10,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode10.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode11.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 11,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode11.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode12.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 12,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode12.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode13.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 13,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode13.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode14.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 14,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode14.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode15.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 15,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode15.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode16.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 16,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode16.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode17.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 17,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode17.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode18.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 18,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode18.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode19.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 19,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode19.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode2.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 2,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode2.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode20.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 20,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode20.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode21.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 21,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode21.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode22.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 22,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode22.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode23.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 23,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode23.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode24.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 24,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode24.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode25.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 25,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode25.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode26.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 26,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode26.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode27.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 27,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode27.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode28.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 28,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode28.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode29.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 29,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode29.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode3.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 3,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode3.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode30.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 30,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode30.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode31.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 31,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode31.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode32.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 32,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode32.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode33.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 33,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode33.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode34.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 34,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode34.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode35.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 35,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode35.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode36.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 36,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode36.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode37.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 37,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode37.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode38.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 38,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode38.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode39.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 39,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode39.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode4.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 4,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode4.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode40.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 40,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode40.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode41.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 41,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode41.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode42.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 42,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode42.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode43.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 43,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode43.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode44.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 44,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode44.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode45.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 45,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode45.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode46.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 46,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode46.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode47.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 47,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode47.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode48.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 48,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode48.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode49.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 49,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode49.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode5.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 5,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode5.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode6.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 6,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode6.json"
+    },
+    {
+      "path": "../RMBench/data/data/battery_try/demo_clean/data/episode7.hdf5",
+      "task": "battery_try",
+      "task_config": "demo_clean",
+      "episode_id": 7,
+      "instruction_path": "../RMBench/data/data/battery_try/demo_clean/instructions/episode7.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode0.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 0,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode0.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode1.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 1,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode1.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode10.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 10,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode10.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode11.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 11,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode11.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode12.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 12,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode12.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode13.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 13,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode13.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode14.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 14,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode14.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode15.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 15,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode15.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode16.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 16,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode16.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode17.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 17,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode17.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode18.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 18,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode18.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode19.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 19,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode19.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode2.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 2,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode2.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode20.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 20,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode20.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode21.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 21,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode21.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode22.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 22,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode22.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode23.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 23,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode23.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode24.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 24,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode24.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode25.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 25,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode25.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode26.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 26,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode26.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode27.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 27,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode27.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode28.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 28,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode28.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode29.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 29,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode29.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode3.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 3,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode3.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode30.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 30,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode30.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode31.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 31,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode31.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode32.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 32,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode32.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode33.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 33,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode33.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode34.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 34,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode34.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode35.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 35,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode35.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode36.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 36,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode36.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode37.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 37,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode37.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode38.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 38,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode38.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode39.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 39,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode39.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode4.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 4,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode4.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode40.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 40,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode40.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode41.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 41,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode41.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode42.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 42,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode42.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode43.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 43,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode43.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode44.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 44,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode44.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode45.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 45,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode45.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode46.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 46,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode46.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode47.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 47,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode47.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode48.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 48,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode48.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode49.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 49,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode49.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode5.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 5,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode5.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode6.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 6,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode6.json"
+    },
+    {
+      "path": "../RMBench/data/data/blocks_ranking_try/demo_clean/data/episode7.hdf5",
+      "task": "blocks_ranking_try",
+      "task_config": "demo_clean",
+      "episode_id": 7,
+      "instruction_path": "../RMBench/data/data/blocks_ranking_try/demo_clean/instructions/episode7.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode0.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 0,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode0.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode1.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 1,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode1.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode10.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 10,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode10.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode11.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 11,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode11.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode12.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 12,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode12.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode13.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 13,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode13.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode14.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 14,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode14.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode15.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 15,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode15.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode16.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 16,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode16.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode17.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 17,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode17.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode18.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 18,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode18.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode19.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 19,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode19.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode2.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 2,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode2.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode20.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 20,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode20.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode21.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 21,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode21.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode22.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 22,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode22.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode23.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 23,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode23.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode24.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 24,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode24.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode25.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 25,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode25.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode26.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 26,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode26.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode27.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 27,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode27.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode28.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 28,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode28.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode29.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 29,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode29.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode3.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 3,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode3.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode30.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 30,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode30.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode31.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 31,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode31.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode32.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 32,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode32.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode33.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 33,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode33.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode34.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 34,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode34.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode35.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 35,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode35.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode36.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 36,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode36.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode37.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 37,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode37.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode38.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 38,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode38.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode39.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 39,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode39.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode4.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 4,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode4.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode40.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 40,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode40.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode41.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 41,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode41.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode42.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 42,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode42.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode43.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 43,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode43.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode44.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 44,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode44.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode45.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 45,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode45.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode46.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 46,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode46.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode47.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 47,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode47.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode48.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 48,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode48.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode49.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 49,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode49.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode5.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 5,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode5.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode6.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 6,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode6.json"
+    },
+    {
+      "path": "../RMBench/data/data/classify_blocks/demo_clean/data/episode7.hdf5",
+      "task": "classify_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 7,
+      "instruction_path": "../RMBench/data/data/classify_blocks/demo_clean/instructions/episode7.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode0.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 0,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode0.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode1.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 1,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode1.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode10.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 10,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode10.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode11.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 11,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode11.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode12.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 12,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode12.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode13.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 13,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode13.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode14.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 14,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode14.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode15.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 15,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode15.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode16.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 16,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode16.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode17.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 17,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode17.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode18.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 18,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode18.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode19.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 19,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode19.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode2.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 2,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode2.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode20.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 20,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode20.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode21.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 21,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode21.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode22.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 22,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode22.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode23.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 23,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode23.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode24.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 24,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode24.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode25.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 25,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode25.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode26.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 26,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode26.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode27.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 27,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode27.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode28.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 28,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode28.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode29.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 29,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode29.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode3.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 3,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode3.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode30.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 30,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode30.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode31.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 31,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode31.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode32.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 32,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode32.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode33.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 33,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode33.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode34.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 34,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode34.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode35.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 35,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode35.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode36.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 36,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode36.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode37.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 37,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode37.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode38.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 38,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode38.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode39.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 39,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode39.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode4.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 4,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode4.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode40.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 40,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode40.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode41.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 41,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode41.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode42.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 42,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode42.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode43.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 43,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode43.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode44.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 44,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode44.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode45.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 45,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode45.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode46.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 46,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode46.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode47.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 47,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode47.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode48.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 48,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode48.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode49.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 49,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode49.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode5.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 5,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode5.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode6.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 6,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode6.json"
+    },
+    {
+      "path": "../RMBench/data/data/cover_blocks/demo_clean/data/episode7.hdf5",
+      "task": "cover_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 7,
+      "instruction_path": "../RMBench/data/data/cover_blocks/demo_clean/instructions/episode7.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode0.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 0,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode0.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode1.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 1,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode1.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode10.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 10,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode10.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode11.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 11,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode11.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode12.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 12,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode12.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode13.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 13,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode13.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode14.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 14,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode14.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode15.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 15,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode15.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode16.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 16,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode16.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode17.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 17,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode17.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode18.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 18,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode18.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode19.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 19,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode19.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode2.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 2,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode2.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode20.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 20,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode20.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode21.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 21,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode21.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode22.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 22,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode22.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode23.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 23,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode23.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode24.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 24,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode24.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode25.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 25,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode25.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode26.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 26,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode26.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode27.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 27,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode27.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode28.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 28,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode28.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode29.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 29,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode29.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode3.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 3,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode3.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode30.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 30,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode30.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode31.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 31,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode31.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode32.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 32,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode32.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode33.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 33,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode33.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode34.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 34,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode34.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode35.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 35,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode35.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode36.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 36,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode36.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode37.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 37,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode37.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode38.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 38,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode38.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode39.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 39,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode39.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode4.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 4,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode4.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode40.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 40,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode40.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode41.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 41,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode41.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode42.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 42,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode42.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode43.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 43,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode43.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode44.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 44,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode44.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode45.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 45,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode45.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode46.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 46,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode46.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode47.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 47,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode47.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode48.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 48,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode48.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode49.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 49,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode49.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode5.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 5,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode5.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode6.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 6,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode6.json"
+    },
+    {
+      "path": "../RMBench/data/data/observe_and_pickup/demo_clean/data/episode7.hdf5",
+      "task": "observe_and_pickup",
+      "task_config": "demo_clean",
+      "episode_id": 7,
+      "instruction_path": "../RMBench/data/data/observe_and_pickup/demo_clean/instructions/episode7.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode0.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 0,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode0.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode1.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 1,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode1.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode10.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 10,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode10.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode11.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 11,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode11.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode12.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 12,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode12.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode13.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 13,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode13.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode14.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 14,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode14.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode15.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 15,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode15.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode16.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 16,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode16.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode17.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 17,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode17.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode18.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 18,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode18.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode19.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 19,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode19.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode2.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 2,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode2.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode20.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 20,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode20.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode21.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 21,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode21.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode22.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 22,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode22.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode23.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 23,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode23.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode24.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 24,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode24.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode25.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 25,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode25.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode26.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 26,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode26.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode27.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 27,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode27.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode28.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 28,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode28.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode29.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 29,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode29.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode3.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 3,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode3.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode30.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 30,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode30.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode31.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 31,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode31.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode32.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 32,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode32.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode33.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 33,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode33.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode34.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 34,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode34.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode35.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 35,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode35.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode36.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 36,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode36.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode37.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 37,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode37.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode38.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 38,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode38.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode39.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 39,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode39.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode4.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 4,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode4.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode40.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 40,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode40.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode41.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 41,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode41.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode42.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 42,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode42.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode43.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 43,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode43.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode44.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 44,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode44.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode45.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 45,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode45.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode46.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 46,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode46.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode47.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 47,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode47.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode48.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 48,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode48.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode49.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 49,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode49.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode5.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 5,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode5.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode6.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 6,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode6.json"
+    },
+    {
+      "path": "../RMBench/data/data/place_block_mat/demo_clean/data/episode7.hdf5",
+      "task": "place_block_mat",
+      "task_config": "demo_clean",
+      "episode_id": 7,
+      "instruction_path": "../RMBench/data/data/place_block_mat/demo_clean/instructions/episode7.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode0.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 0,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode0.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode1.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 1,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode1.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode10.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 10,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode10.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode11.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 11,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode11.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode12.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 12,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode12.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode13.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 13,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode13.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode14.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 14,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode14.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode15.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 15,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode15.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode16.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 16,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode16.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode17.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 17,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode17.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode18.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 18,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode18.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode19.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 19,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode19.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode2.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 2,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode2.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode20.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 20,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode20.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode21.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 21,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode21.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode22.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 22,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode22.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode23.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 23,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode23.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode24.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 24,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode24.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode25.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 25,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode25.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode26.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 26,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode26.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode27.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 27,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode27.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode28.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 28,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode28.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode29.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 29,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode29.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode3.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 3,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode3.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode30.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 30,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode30.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode31.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 31,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode31.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode32.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 32,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode32.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode33.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 33,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode33.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode34.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 34,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode34.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode35.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 35,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode35.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode36.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 36,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode36.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode37.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 37,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode37.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode38.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 38,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode38.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode39.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 39,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode39.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode4.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 4,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode4.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode40.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 40,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode40.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode41.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 41,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode41.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode42.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 42,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode42.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode43.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 43,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode43.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode44.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 44,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode44.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode45.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 45,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode45.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode46.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 46,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode46.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode47.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 47,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode47.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode48.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 48,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode48.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode49.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 49,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode49.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode5.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 5,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode5.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode6.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 6,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode6.json"
+    },
+    {
+      "path": "../RMBench/data/data/press_button/demo_clean/data/episode7.hdf5",
+      "task": "press_button",
+      "task_config": "demo_clean",
+      "episode_id": 7,
+      "instruction_path": "../RMBench/data/data/press_button/demo_clean/instructions/episode7.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode0.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 0,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode0.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode1.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 1,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode1.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode10.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 10,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode10.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode11.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 11,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode11.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode12.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 12,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode12.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode13.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 13,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode13.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode14.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 14,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode14.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode15.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 15,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode15.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode16.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 16,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode16.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode17.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 17,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode17.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode18.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 18,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode18.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode19.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 19,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode19.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode2.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 2,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode2.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode20.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 20,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode20.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode21.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 21,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode21.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode22.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 22,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode22.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode23.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 23,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode23.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode24.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 24,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode24.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode25.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 25,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode25.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode26.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 26,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode26.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode27.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 27,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode27.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode28.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 28,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode28.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode29.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 29,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode29.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode3.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 3,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode3.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode30.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 30,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode30.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode31.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 31,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode31.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode32.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 32,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode32.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode33.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 33,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode33.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode34.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 34,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode34.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode35.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 35,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode35.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode36.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 36,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode36.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode37.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 37,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode37.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode38.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 38,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode38.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode39.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 39,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode39.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode4.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 4,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode4.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode40.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 40,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode40.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode41.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 41,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode41.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode42.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 42,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode42.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode43.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 43,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode43.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode44.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 44,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode44.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode45.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 45,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode45.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode46.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 46,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode46.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode47.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 47,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode47.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode48.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 48,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode48.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode49.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 49,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode49.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode5.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 5,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode5.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode6.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 6,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode6.json"
+    },
+    {
+      "path": "../RMBench/data/data/put_back_block/demo_clean/data/episode7.hdf5",
+      "task": "put_back_block",
+      "task_config": "demo_clean",
+      "episode_id": 7,
+      "instruction_path": "../RMBench/data/data/put_back_block/demo_clean/instructions/episode7.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode0.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 0,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode0.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode1.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 1,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode1.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode10.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 10,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode10.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode11.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 11,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode11.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode12.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 12,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode12.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode13.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 13,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode13.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode14.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 14,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode14.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode15.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 15,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode15.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode16.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 16,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode16.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode17.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 17,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode17.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode18.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 18,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode18.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode19.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 19,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode19.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode2.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 2,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode2.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode20.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 20,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode20.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode21.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 21,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode21.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode22.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 22,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode22.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode23.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 23,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode23.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode24.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 24,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode24.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode25.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 25,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode25.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode26.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 26,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode26.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode27.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 27,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode27.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode28.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 28,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode28.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode29.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 29,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode29.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode3.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 3,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode3.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode30.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 30,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode30.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode31.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 31,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode31.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode32.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 32,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode32.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode33.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 33,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode33.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode34.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 34,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode34.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode35.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 35,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode35.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode36.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 36,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode36.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode37.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 37,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode37.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode38.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 38,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode38.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode39.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 39,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode39.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode4.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 4,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode4.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode40.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 40,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode40.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode41.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 41,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode41.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode42.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 42,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode42.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode43.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 43,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode43.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode44.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 44,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode44.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode45.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 45,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode45.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode46.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 46,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode46.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode47.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 47,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode47.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode48.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 48,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode48.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode49.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 49,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode49.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode5.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 5,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode5.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode6.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 6,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode6.json"
+    },
+    {
+      "path": "../RMBench/data/data/rearrange_blocks/demo_clean/data/episode7.hdf5",
+      "task": "rearrange_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 7,
+      "instruction_path": "../RMBench/data/data/rearrange_blocks/demo_clean/instructions/episode7.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode0.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 0,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode0.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode1.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 1,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode1.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode10.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 10,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode10.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode11.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 11,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode11.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode12.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 12,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode12.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode13.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 13,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode13.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode14.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 14,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode14.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode15.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 15,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode15.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode16.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 16,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode16.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode17.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 17,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode17.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode18.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 18,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode18.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode19.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 19,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode19.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode2.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 2,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode2.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode20.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 20,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode20.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode21.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 21,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode21.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode22.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 22,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode22.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode23.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 23,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode23.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode24.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 24,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode24.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode25.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 25,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode25.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode26.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 26,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode26.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode27.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 27,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode27.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode28.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 28,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode28.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode29.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 29,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode29.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode3.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 3,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode3.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode30.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 30,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode30.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode31.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 31,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode31.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode32.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 32,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode32.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode33.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 33,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode33.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode34.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 34,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode34.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode35.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 35,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode35.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode36.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 36,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode36.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode37.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 37,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode37.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode38.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 38,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode38.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode39.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 39,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode39.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode4.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 4,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode4.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode40.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 40,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode40.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode41.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 41,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode41.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode42.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 42,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode42.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode43.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 43,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode43.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode44.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 44,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode44.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode45.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 45,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode45.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode46.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 46,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode46.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode47.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 47,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode47.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode48.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 48,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode48.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode49.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 49,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode49.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode5.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 5,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode5.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode6.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 6,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode6.json"
+    },
+    {
+      "path": "../RMBench/data/data/storage_blocks/demo_clean/data/episode7.hdf5",
+      "task": "storage_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 7,
+      "instruction_path": "../RMBench/data/data/storage_blocks/demo_clean/instructions/episode7.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode0.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 0,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode0.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode1.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 1,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode1.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode10.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 10,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode10.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode11.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 11,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode11.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode12.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 12,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode12.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode13.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 13,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode13.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode14.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 14,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode14.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode15.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 15,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode15.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode16.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 16,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode16.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode17.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 17,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode17.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode18.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 18,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode18.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode19.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 19,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode19.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode2.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 2,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode2.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode20.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 20,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode20.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode21.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 21,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode21.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode22.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 22,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode22.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode23.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 23,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode23.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode24.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 24,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode24.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode25.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 25,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode25.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode26.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 26,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode26.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode27.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 27,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode27.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode28.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 28,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode28.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode29.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 29,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode29.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode3.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 3,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode3.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode30.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 30,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode30.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode31.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 31,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode31.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode32.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 32,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode32.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode33.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 33,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode33.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode34.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 34,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode34.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode35.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 35,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode35.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode36.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 36,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode36.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode37.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 37,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode37.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode38.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 38,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode38.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode39.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 39,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode39.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode4.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 4,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode4.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode40.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 40,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode40.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode41.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 41,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode41.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode42.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 42,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode42.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode43.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 43,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode43.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode44.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 44,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode44.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode45.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 45,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode45.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode46.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 46,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode46.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode47.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 47,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode47.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode48.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 48,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode48.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode49.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 49,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode49.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode5.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 5,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode5.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode6.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 6,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode6.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_T/demo_clean/data/episode7.hdf5",
+      "task": "swap_T",
+      "task_config": "demo_clean",
+      "episode_id": 7,
+      "instruction_path": "../RMBench/data/data/swap_T/demo_clean/instructions/episode7.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode0.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 0,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode0.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode1.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 1,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode1.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode10.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 10,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode10.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode11.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 11,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode11.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode12.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 12,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode12.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode13.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 13,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode13.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode14.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 14,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode14.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode15.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 15,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode15.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode16.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 16,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode16.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode17.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 17,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode17.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode18.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 18,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode18.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode19.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 19,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode19.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode2.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 2,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode2.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode20.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 20,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode20.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode21.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 21,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode21.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode22.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 22,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode22.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode23.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 23,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode23.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode24.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 24,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode24.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode25.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 25,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode25.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode26.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 26,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode26.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode27.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 27,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode27.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode28.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 28,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode28.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode29.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 29,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode29.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode3.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 3,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode3.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode30.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 30,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode30.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode31.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 31,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode31.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode32.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 32,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode32.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode33.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 33,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode33.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode34.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 34,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode34.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode35.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 35,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode35.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode36.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 36,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode36.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode37.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 37,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode37.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode38.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 38,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode38.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode39.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 39,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode39.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode4.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 4,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode4.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode40.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 40,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode40.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode41.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 41,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode41.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode42.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 42,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode42.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode43.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 43,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode43.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode44.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 44,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode44.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode45.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 45,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode45.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode46.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 46,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode46.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode47.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 47,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode47.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode48.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 48,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode48.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode49.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 49,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode49.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode5.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 5,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode5.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode6.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 6,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode6.json"
+    },
+    {
+      "path": "../RMBench/data/data/swap_blocks/demo_clean/data/episode7.hdf5",
+      "task": "swap_blocks",
+      "task_config": "demo_clean",
+      "episode_id": 7,
+      "instruction_path": "../RMBench/data/data/swap_blocks/demo_clean/instructions/episode7.json"
+    }
+  ],
+  "observation_key": [
+    "observation/head_camera/rgb",
+    "observation/left_camera/rgb",
+    "observation/right_camera/rgb"
+  ],
+  "state_key": "joint_action/vector",
+  "instruction_source": "instructions/episode*.json",
+  "num_views": 3,
+  "state_dim": 14,
+  "action_dim": 14
+}

@@ -21,7 +21,7 @@ import json
 import random
 import argparse
 from pathlib import Path
-from typing import Dict
+from typing import Dict, Optional
 
 import numpy as np
 import torch
@@ -120,7 +120,7 @@ def get_args_parser():
     
     # Action mode
     parser.add_argument("--action_mode", type=str, default="galaxea_joint",
-                        help="Action mode: galaxea_joint, galaxea, libero_joint, etc.")
+                        help="Action mode: galaxea_joint, libero_joint, rmbench_joint, etc.")
     
     # Data loading
     parser.add_argument("--num_workers", type=int, default=4,
@@ -153,6 +153,16 @@ def get_args_parser():
                         help="Number of transformer layers")
     parser.add_argument("--num_heads", type=int, default=12,
                         help="Number of attention heads")
+    parser.add_argument("--max_len_seq", type=int, default=1024,
+                        help="Maximum sequence length for action transformer")
+    parser.add_argument("--use_autogaze_obs_encoder", action="store_true", default=False,
+                        help="Use AutoGaze + SigLIP observation encoder")
+    parser.add_argument("--autogaze_model_path", type=str, default="nvidia/AutoGaze")
+    parser.add_argument("--autogaze_siglip_model_path", type=str, default="google/siglip2-base-patch16-224")
+    parser.add_argument("--autogaze_history_len", type=int, default=8)
+    parser.add_argument("--autogaze_projector_hidden_size", type=int, default=1536)
+    parser.add_argument("--autogaze_gazing_ratio", type=float, default=0.10)
+    parser.add_argument("--autogaze_task_loss_requirement", type=float, default=None)
 
     return parser
 
@@ -237,6 +247,66 @@ def update_group_lrs(optim, step, args):
             set_group_lr(optim, name, new_lr)
 
 
+def _load_checkpoint_state_dict(load_path: str) -> Optional[Dict[str, torch.Tensor]]:
+    """Load a checkpoint state dict from a local HF-style directory."""
+    if not load_path or not os.path.isdir(load_path):
+        return None
+
+    safetensors_path = os.path.join(load_path, "model.safetensors")
+    pytorch_bin_path = os.path.join(load_path, "pytorch_model.bin")
+
+    if os.path.exists(safetensors_path):
+        from safetensors.torch import load_file
+
+        return load_file(safetensors_path, device="cpu")
+
+    if os.path.exists(pytorch_bin_path):
+        return torch.load(pytorch_bin_path, map_location="cpu")
+
+    return None
+
+
+def load_matching_checkpoint(model: SmolVLMVLA, load_path: str, logger) -> None:
+    """
+    Load all weights whose keys and shapes match the current model.
+
+    This is used to fine-tune RMBench models from LIBERO-style SimVLA checkpoints,
+    where the action/proprio dimensions differ but most backbone weights are reusable.
+    """
+    state_dict = _load_checkpoint_state_dict(load_path)
+    if state_dict is None:
+        logger.warning(f"No local checkpoint weights found under: {load_path}")
+        return
+
+    model_state = model.state_dict()
+    matched = {}
+    skipped = []
+
+    for key, value in state_dict.items():
+        if key not in model_state:
+            skipped.append((key, "missing_key"))
+            continue
+        if model_state[key].shape != value.shape:
+            skipped.append((key, f"shape {tuple(value.shape)} -> {tuple(model_state[key].shape)}"))
+            continue
+        matched[key] = value
+
+    missing_after = sorted(k for k in model_state.keys() if k not in matched)
+    model.load_state_dict(matched, strict=False)
+
+    logger.info(
+        f"Loaded {len(matched)}/{len(model_state)} matching tensors from checkpoint: {load_path}"
+    )
+    if skipped:
+        logger.info(f"Skipped {len(skipped)} tensors due to key/shape mismatch")
+        for key, reason in skipped[:20]:
+            logger.info(f"  skip: {key} ({reason})")
+        if len(skipped) > 20:
+            logger.info(f"  ... {len(skipped) - 20} more skipped tensors")
+    if missing_after:
+        logger.info(f"Current model still has {len(missing_after)} tensors initialized from scratch")
+
+
 # ============================================================
 # Main Training
 # ============================================================
@@ -305,47 +375,45 @@ def main(args):
         logger.info(f"Using normalization stats from: {args.norm_stats_path}")
     
     load_path = args.models
-    
-    if load_path and os.path.isdir(load_path) and os.path.exists(os.path.join(load_path, "model.safetensors")):
-        logger.info(f"Loading SmolVLM-VLA from checkpoint: {load_path}")
-        model = SmolVLMVLA.from_pretrained(load_path)
-        
-        if args.action_mode != model.action_mode:
-            logger.warning(f"Overriding model action_mode from '{model.action_mode}' to '{args.action_mode}'")
-            model.action_mode = args.action_mode
-            model.action_space = build_action_space(args.action_mode, **action_space_kwargs)
-        elif action_space_kwargs:
-            model.action_space = build_action_space(args.action_mode, **action_space_kwargs)
-            
-        if args.num_actions != model.num_actions:
-            logger.warning(f"Overriding model num_actions from {model.num_actions} to {args.num_actions}")
-            model.config.num_actions = args.num_actions
-            model.num_actions = args.num_actions
-            
-        model_use_adaln = getattr(model, 'use_adaln', False)
-        if args.use_adaln != model_use_adaln:
-            logger.warning(f"⚠️ Cannot change use_adaln when loading from checkpoint")
-    else:
-        logger.info(f"Initializing SmolVLM-VLA from config")
-        logger.info(f"  smolvlm_model_path: {args.smolvlm_model_path}")
-        logger.info(f"  action_mode: {args.action_mode}")
-        logger.info(f"  num_actions: {args.num_actions}")
-        logger.info(f"  use_adaln: {args.use_adaln}")
-        
-        config = SmolVLMVLAConfig(
-            smolvlm_model_path=args.smolvlm_model_path,
-            hidden_size=args.hidden_size,
-            depth=args.depth,
-            num_heads=args.num_heads,
-            action_mode=args.action_mode,
-            num_actions=args.num_actions,
-            use_adaln=args.use_adaln,
-            image_size=args.image_size,
-        )
-        model = SmolVLMVLA(config)
-        
-        if action_space_kwargs:
-            model.action_space = build_action_space(args.action_mode, **action_space_kwargs)
+
+    logger.info("Initializing SmolVLM-VLA from current args")
+    logger.info(f"  smolvlm_model_path: {args.smolvlm_model_path}")
+    logger.info(f"  action_mode: {args.action_mode}")
+    logger.info(f"  num_actions: {args.num_actions}")
+    logger.info(f"  use_adaln: {args.use_adaln}")
+
+    config = SmolVLMVLAConfig(
+        smolvlm_model_path=args.smolvlm_model_path,
+        hidden_size=args.hidden_size,
+        depth=args.depth,
+        num_heads=args.num_heads,
+        action_mode=args.action_mode,
+        num_actions=args.num_actions,
+        use_adaln=args.use_adaln,
+        image_size=args.image_size,
+        max_len_seq=args.max_len_seq,
+        use_autogaze_obs_encoder=args.use_autogaze_obs_encoder,
+        autogaze_model_path=args.autogaze_model_path,
+        autogaze_siglip_model_path=args.autogaze_siglip_model_path,
+        autogaze_history_len=args.autogaze_history_len,
+        autogaze_projector_hidden_size=args.autogaze_projector_hidden_size,
+        autogaze_gazing_ratio=args.autogaze_gazing_ratio,
+        autogaze_task_loss_requirement=args.autogaze_task_loss_requirement,
+    )
+    model = SmolVLMVLA(config)
+
+    if action_space_kwargs:
+        model.action_space = build_action_space(args.action_mode, **action_space_kwargs)
+
+    if load_path:
+        if os.path.isdir(load_path):
+            logger.info(f"Loading compatible checkpoint weights from: {load_path}")
+            load_matching_checkpoint(model, load_path, logger)
+        else:
+            logger.info(f"Loading SmolVLM-VLA directly from pretrained source: {load_path}")
+            model = SmolVLMVLA.from_pretrained(load_path)
+            if action_space_kwargs:
+                model.action_space = build_action_space(args.action_mode, **action_space_kwargs)
     
     # Build processor
     processor = SmolVLMVLAProcessor.from_pretrained(args.smolvlm_model_path)
@@ -359,6 +427,7 @@ def main(args):
         training=True,
         num_workers=args.num_workers,
         image_size=args.image_size,
+        history_len=args.autogaze_history_len if args.use_autogaze_obs_encoder else 0,
     )
 
     # Optimizer

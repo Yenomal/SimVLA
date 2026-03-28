@@ -51,6 +51,15 @@ class SmolVLMVLAConfig(PretrainedConfig):
         image_size: int = 384,  # Can be 384 or 512
         num_views: int = 3,  # Number of camera views
 
+        # === AutoGaze observation encoder ===
+        use_autogaze_obs_encoder: bool = False,
+        autogaze_model_path: str = "nvidia/AutoGaze",
+        autogaze_siglip_model_path: str = "google/siglip2-base-patch16-224",
+        autogaze_history_len: int = 8,
+        autogaze_projector_hidden_size: int = 1536,
+        autogaze_gazing_ratio: float = 0.10,
+        autogaze_task_loss_requirement: float | None = None,
+
         **kwargs,
     ):
         # SmolVLM backbone path
@@ -75,6 +84,13 @@ class SmolVLMVLAConfig(PretrainedConfig):
         # Image settings
         self.image_size = image_size
         self.num_views = num_views
+        self.use_autogaze_obs_encoder = use_autogaze_obs_encoder
+        self.autogaze_model_path = autogaze_model_path
+        self.autogaze_siglip_model_path = autogaze_siglip_model_path
+        self.autogaze_history_len = autogaze_history_len
+        self.autogaze_projector_hidden_size = autogaze_projector_hidden_size
+        self.autogaze_gazing_ratio = autogaze_gazing_ratio
+        self.autogaze_task_loss_requirement = autogaze_task_loss_requirement
 
         # Initialize base HF config attributes
         super().__init__(**kwargs)

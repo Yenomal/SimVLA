@@ -30,6 +30,7 @@ from transformers import PreTrainedModel, AutoProcessor, AutoModelForImageTextTo
 from .transformer_smolvlm import SmolVLMActionTransformer
 from .action_hub import build_action_space
 from .configuration_smolvlm_vla import SmolVLMVLAConfig
+from .observation_encoder_autogaze import AutoGazeObservationEncoder
 
 
 class SmolVLMVLA(PreTrainedModel):
@@ -84,7 +85,8 @@ class SmolVLMVLA(PreTrainedModel):
 
         # DiT/AdaLN mode setting
         self.use_adaln = getattr(config, 'use_adaln', False)
-        
+        self.use_autogaze_obs_encoder = getattr(config, "use_autogaze_obs_encoder", False)
+
         # Flow matching action head (SmolVLM version - no aux_visual)
         self.transformer = SmolVLMActionTransformer(
             hidden_size=config.hidden_size,
@@ -103,6 +105,19 @@ class SmolVLMVLA(PreTrainedModel):
             logging.info("✓ DiT/AdaLN mode enabled: conditions injected via Adaptive Layer Norm")
         else:
             logging.info("✓ Concat mode enabled: conditions concatenated to sequence")
+
+        self.obs_encoder = None
+        if self.use_autogaze_obs_encoder:
+            self.obs_encoder = AutoGazeObservationEncoder(
+                out_dim=vlm_hidden_size,
+                autogaze_model_path=config.autogaze_model_path,
+                siglip_model_path=config.autogaze_siglip_model_path,
+                history_len=config.autogaze_history_len,
+                projector_hidden_dim=config.autogaze_projector_hidden_size,
+                gazing_ratio=config.autogaze_gazing_ratio,
+                task_loss_requirement=config.autogaze_task_loss_requirement,
+            )
+            logging.info("✓ AutoGaze observation encoder enabled")
 
         # Deferred FastAPI app
         self.app: FastAPI | None = None
@@ -320,6 +335,53 @@ class SmolVLMVLA(PreTrainedModel):
         
         return {"vlm_features": vlm_features}
 
+    def forward_vlm_autogaze(
+        self,
+        image_input: torch.FloatTensor,
+        image_mask: torch.Tensor,
+        head_history: torch.FloatTensor,
+        input_ids: torch.LongTensor,
+    ) -> Dict[str, torch.Tensor]:
+        if self.obs_encoder is None:
+            raise RuntimeError("AutoGaze observation encoder is not initialized.")
+
+        obs_outputs = self.obs_encoder(
+            image_input=image_input,
+            image_mask=image_mask,
+            head_history=head_history,
+        )
+        obs_tokens = obs_outputs["obs_tokens"]
+        obs_attention_mask = obs_outputs["obs_attention_mask"]
+        text_embeds = self.vlm.model.text_model.get_input_embeddings()(input_ids)
+
+        B = input_ids.shape[0]
+        hidden_size = text_embeds.shape[-1]
+        batch_inputs_embeds = []
+        max_seq_len = 0
+
+        for b in range(B):
+            sample_obs = obs_tokens[b][obs_attention_mask[b].bool()]
+            sample_text = text_embeds[b]
+            combined = torch.cat([sample_obs, sample_text], dim=0)
+            batch_inputs_embeds.append(combined)
+            max_seq_len = max(max_seq_len, combined.shape[0])
+
+        padded_inputs_embeds = torch.zeros(B, max_seq_len, hidden_size, device=text_embeds.device, dtype=text_embeds.dtype)
+        attention_mask = torch.zeros(B, max_seq_len, device=text_embeds.device, dtype=torch.long)
+
+        for b, embeds in enumerate(batch_inputs_embeds):
+            seq_len = embeds.shape[0]
+            padded_inputs_embeds[b, :seq_len] = embeds
+            attention_mask[b, :seq_len] = 1
+
+        lm_outputs = self.vlm.model.text_model(
+            inputs_embeds=padded_inputs_embeds,
+            attention_mask=attention_mask,
+            output_hidden_states=True,
+            return_dict=True,
+        )
+        return {"vlm_features": lm_outputs.last_hidden_state}
+
     # ================================= training =================================
     def forward(
         self,
@@ -328,6 +390,7 @@ class SmolVLMVLA(PreTrainedModel):
         image_mask: torch.Tensor,           # [B, V]
         proprio: torch.Tensor,              # [B, dim_proprio]
         action: torch.Tensor,               # [B, T=num_actions, D=dim_action]
+        head_history: torch.FloatTensor | None = None,  # [B, K, C, H, W]
     ) -> Dict[str, torch.Tensor]:
         """
         Flow Matching training.
@@ -337,7 +400,12 @@ class SmolVLMVLA(PreTrainedModel):
         3) Target: velocity u_t = noise - actions
         4) Model predicts v_t, compute MSE(v_t, u_t)
         """
-        enc = self.forward_vlm_efficient(image_input, image_mask, input_ids)
+        if self.use_autogaze_obs_encoder:
+            if head_history is None:
+                raise ValueError("head_history is required when use_autogaze_obs_encoder=True")
+            enc = self.forward_vlm_autogaze(image_input, image_mask, head_history, input_ids)
+        else:
+            enc = self.forward_vlm_efficient(image_input, image_mask, input_ids)
 
         B = input_ids.shape[0]
         device = input_ids.device
@@ -391,6 +459,7 @@ class SmolVLMVLA(PreTrainedModel):
         image_input: torch.FloatTensor,
         image_mask: torch.Tensor,
         proprio: torch.Tensor,
+        head_history: torch.FloatTensor | None = None,
         steps: int = 10,
     ) -> torch.Tensor:
         """
@@ -403,7 +472,12 @@ class SmolVLMVLA(PreTrainedModel):
         3) Final x_0 ≈ target action
         """
         self.eval()
-        enc = self.forward_vlm_efficient(image_input, image_mask, input_ids)
+        if self.use_autogaze_obs_encoder:
+            if head_history is None:
+                raise ValueError("head_history is required when use_autogaze_obs_encoder=True")
+            enc = self.forward_vlm_autogaze(image_input, image_mask, head_history, input_ids)
+        else:
+            enc = self.forward_vlm_efficient(image_input, image_mask, input_ids)
 
         B = input_ids.shape[0]
         D = self.action_space.dim_action

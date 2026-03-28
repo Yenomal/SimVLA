@@ -57,12 +57,14 @@ class SmolVLMDataReader(IterableDataset):
         action_mode: str = "galaxea_joint",
         lang_aug: str = None,
         image_size: int = 384,  # Default 384, can be 384 or 512
+        history_len: int = 0,
     ):
         self.num_views = num_views
         self.training = training
         self.num_actions = num_actions
         self.action_mode = action_mode
         self.image_size = image_size
+        self.history_len = int(history_len)
         self.metas: Dict[str, dict] = {}
         
         print(f"[SmolVLM Dataset] Image size: {self.image_size}x{self.image_size}")
@@ -138,39 +140,42 @@ class SmolVLMDataReader(IterableDataset):
     def _iter_one_dataset(self, dataset_name: str) -> Iterable[dict]:
         """Iterate over one dataset."""
         meta = self.metas[dataset_name]
-        traj_indices = list(range(len(meta["datalist"])))
-        if self.training:
-            random.shuffle(traj_indices)
-            
         Handler = get_handler_cls(dataset_name)
-        handler = Handler(meta=meta, num_views=self.num_views)
-        
-        for traj_idx in traj_indices:
-            try:
-                for sample in handler.iter_episode(
-                    traj_idx,
-                    num_actions=self.num_actions,
-                    training=self.training,
-                    image_aug=self.image_aug,
-                    lang_aug_map=meta.get("lang_aug_map"),
-                    action_mode=self.action_mode
-                ):
-                    idx_for_delta = meta.get("idx_for_delta", [])
-                    has_proprio = "proprio" in sample
-                    slice_result = action_slice(sample["abs_trajectory"], idx_for_delta)
-                    
-                    if has_proprio:
-                        sample["action"] = slice_result["action"]
-                    else:
-                        sample.update(slice_result)
-                    del sample["abs_trajectory"]
-                    
-                    yield sample
-            except Exception as e:
-                continue
-                
-        if self.training:
-            yield from self._iter_one_dataset(dataset_name)
+
+        while True:
+            traj_indices = list(range(len(meta["datalist"])))
+            if self.training:
+                random.shuffle(traj_indices)
+
+            handler = Handler(meta=meta, num_views=self.num_views)
+
+            for traj_idx in traj_indices:
+                try:
+                    for sample in handler.iter_episode(
+                        traj_idx,
+                        num_actions=self.num_actions,
+                        training=self.training,
+                        image_aug=self.image_aug,
+                        lang_aug_map=meta.get("lang_aug_map"),
+                        action_mode=self.action_mode,
+                        history_len=self.history_len,
+                    ):
+                        idx_for_delta = meta.get("idx_for_delta", [])
+                        has_proprio = "proprio" in sample
+                        slice_result = action_slice(sample["abs_trajectory"], idx_for_delta)
+
+                        if has_proprio:
+                            sample["action"] = slice_result["action"]
+                        else:
+                            sample.update(slice_result)
+                        del sample["abs_trajectory"]
+
+                        yield sample
+                except Exception:
+                    continue
+
+            if not self.training:
+                break
 
     def __iter__(self):
         """Main iteration."""
@@ -289,6 +294,7 @@ def create_smolvlm_dataloader(
     num_workers: int = 4,
     image_size: int = 384,
     use_smart_padding: bool = False,
+    history_len: int = 0,
 ):
     """
     Create dataloader for SmolVLM-VLA training.
@@ -349,6 +355,7 @@ def create_smolvlm_dataloader(
         training=training,
         action_mode=action_mode,
         image_size=image_size,
+        history_len=history_len,
     )
     
     return DataLoader(
